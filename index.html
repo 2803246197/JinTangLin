@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林锦镗 - 个人简历</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#165DFF',
+            secondary: '#36D399',
+            dark: '#334155',
+            light: '#F8FAFC'
+          },
+          fontFamily: {
+            inter: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-inter text-dark">
+  <!-- 顶部导航 -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-primary">
+        <span class="fa fa-user-circle-o mr-2"></span>林锦镗
+      </h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="text-gray-600 hover:text-primary transition-colors">关于我</a></li>
+          <li><a href="#education" class="text-gray-600 hover:text-primary transition-colors">教育经历</a></li>
+          <li><a href="#skills" class="text-gray-600 hover:text-primary transition-colors">技能证书</a></li>
+          <li><a href="#projects" class="text-gray-600 hover:text-primary transition-colors">项目经历</a></li>
+        </ul>
+      </nav>
+      <button class="hidden md:block bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg transition-all shadow-md hover:shadow-lg">
+        <span class="fa fa-download mr-2"></span>
+        <a href="https://github.com/2803246197/JinTangLin/blob/main/AI%E5%B7%A5%E7%A8%8B%E5%B8%88.pdf" download>
+          下载简历
+        </a>
+      </button>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <!-- 个人信息卡片 -->
+    <section id="about" class="mb-12 bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-xl">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-primary p-8 text-white">
+          <h2 class="text-3xl font-bold mb-4">个人信息</h2>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <span class="fa fa-phone w-8 text-xl"></span>
+              <span>13266271596</span>
+            </div>
+            <div class="flex items-center">
+              <span class="fa fa-envelope w-8 text-xl"></span>
+              <span>13266271596@163.com</span>
+            </div>
+            <div class="flex items-center">
+              <span class="fa fa-map-marker w-8 text-xl"></span>
+              <span>广东</span>
+            </div>
+            <div class="flex items-center">
+              <span class="fa fa-user w-8 text-xl"></span>
+              <span>汉 / 共青团员</span>
+            </div>
+            <div class="flex items-center">
+              <span class="fa fa-money w-8 text-xl"></span>
+              <span>期望薪资：7k</span>
+            </div>
+            <div class="flex items-center">
+              <span class="fa fa-suitcase w-8 text-xl"></span>
+              <span>出差意愿：能适应较长期出差（1~2月）</span>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-2 p-8">
+          <div class="flex items-center mb-6">
+            <h2 class="text-3xl font-bold mr-4">林锦镗</h2>
+            <span class="bg-secondary/20 text-secondary px-3 py-1 rounded-full text-sm font-medium">软件工程 本科</span>
+          </div>
+          <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+            专注于人工智能与软件开发领域，擅长多模态数字人系统、AR工业检测系统研发。拥有丰富的数学建模与算法竞赛经验，发表IEEE A类核心期刊论文，熟悉多种云计算平台与AI技术栈，具备良好的团队协作能力与技术创新思维。
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="font-semibold text-lg mb-2 flex items-center">
+                <span class="fa fa-graduation-cap text-primary mr-2"></span>教育背景
+              </h3>
+              <p class="text-gray-700">广东科技大学 | 软件工程 | 本科</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="font-semibold text-lg mb-2 flex items-center">
+                <span class="fa fa-trophy text-primary mr-2"></span>竞赛荣誉
+              </h3>
+              <p class="text-gray-700">蓝桥杯一等奖 | AI应用比赛三等奖</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="font-semibold text-lg mb-2 flex items-center">
+                <span class="fa fa-file-text-o text-primary mr-2"></span>发表论文
+              </h3>
+              <p class="text-gray-700">IEEE A类核心期刊一篇</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="font-semibold text-lg mb-2 flex items-center">
+                <span class="fa fa-code text-primary mr-2"></span>技术方向
+              </h3>
+              <p class="text-gray-700">AIGC | AI大模型开发 | AI工业机器人</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 教育经历 -->
+    <section id="education" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center">
+        <span class="fa fa-graduation-cap text-primary mr-3 text-4xl"></span>教育/学术经历
+      </h2>
+      
+      <div class="space-y-6">
+        <!-- 广东科技大学 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold">广东科技大学</h3>
+              <p class="text-gray-600">软件工程 | 本科 | 计算机学院</p>
+            </div>
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">2021-2025</span>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="font-semibold text-lg mb-2">学术成果</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>参加过学校Matlab数学建模大赛培训并获二等奖</li>
+              <li>参加过学校数学竞赛培训并获三等奖</li>
+              <li>与暨南大学团队合作共同研发多模态数字人直播系统获AI应用比赛三等奖</li>
+              <li>蓝桥杯一等奖</li>
+              <li>发表IEEE A类核心期刊一篇</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="font-semibold text-lg mb-2">发表论文</h4>
+            <p class="text-gray-700 italic">
+              J. Lin and B. Li, "Research on Impact Modeling and Risk Assessment of Software Requirements Change based on Dependency Structure Matrix," 2024 International Conference on Intelligent Computing and Data Mining (ICDM), Chaozhou, China, 2024, pp. 37-41, doi: 10.1109/ICDM63232.2024.10762046.
+            </p>
+            <p class="text-gray-600 mt-2">
+              keywords: {Analytical models;Adaptation models;Software architecture;Unified modeling language;Project management;Systems architecture;Computer architecture;Software;Data mining;Software development management;requirements change;dependency structure matrix;requirements change propagation probability;requirements change impact probability;software architecture}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技能/证书 -->
+    <section id="skills" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center">
+        <span class="fa fa-wrench text-primary mr-3 text-4xl"></span>技能/证书及其他
+      </h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- 技能 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <h3 class="text-xl font-bold mb-4 flex items-center">
+            <span class="fa fa-code text-primary mr-2"></span>专业技能
+          </h3>
+          
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-semibold mb-2">编程语言与开发工具</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Matlab数学建模</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">C/C++</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Java</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Python</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">SpringBoot</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Redis</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Linux命令与Shell</span>
+              </div>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold mb-2">办公与设计软件</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">WPS Office</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">PowerPoint</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Excel</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Word</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Pr</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">AE</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">PS</span>
+              </div>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold mb-2">AI与云计算技术</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Lora模型训练</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">AIGC</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">大语言模型应用</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Hugging Face</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">LangChain</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">华为云</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">阿里云</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">腾讯云</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Amazon云</span>
+              </div>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold mb-2">专业技能描述</h4>
+              <p class="text-gray-700">
+                熟悉AI生成音频、视频技术，对AIGC前沿科技充满热情；熟练使用Deepseek、ChatGPT、文心一言等大语言模型，擅长prompt提示词工程，熟悉AI agent智能以及文心一言智能体、coze、宝塔AI等AI搭建平台。掌握Ollama的AI本地部署技术。具备网络调试与安全防护经验，确保系统稳定运行。熟悉相机或摄像头的安装和拍摄，确保监控画面清晰。
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 证书 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <h3 class="text-xl font-bold mb-4 flex items-center">
+            <span class="fa fa-certificate text-primary mr-2"></span>证书/执照
+          </h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                <span class="fa fa-desktop text-primary text-xl"></span>
+              </div>
+              <div>
+                <h4 class="font-semibold">计算机四级</h4>
+                <p class="text-gray-600">计算机专业基础能力认证</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                <span class="fa fa-car text-primary text-xl"></span>
+              </div>
+              <div>
+                <h4 class="font-semibold">驾驶证</h4>
+                <p class="text-gray-600">C1驾驶证</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                <span class="fa fa-language text-primary text-xl"></span>
+              </div>
+              <div>
+                <h4 class="font-semibold">CET4</h4>
+                <p class="text-gray-600">大学英语四级</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                <span class="fa fa-cloud text-primary text-xl"></span>
+              </div>
+              <div>
+                <h4 class="font-semibold">HCIP证（中级）</h4>
+                <p class="text-gray-600">华为认证ICT高级工程师</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                <span class="fa fa-robot text-primary text-xl"></span>
+              </div>
+              <div>
+                <h4 class="font-semibold">华为HCCDA-AI</h4>
+                <p class="text-gray-600">华为认证数据分析师（AI方向）</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                <span class="fa fa-mobile text-primary text-xl"></span>
+              </div>
+              <div>
+                <h4 class="font-semibold">华为HarmonyOS应用开发者高级证书</h4>
+                <p class="text-gray-600">华为鸿蒙操作系统应用开发认证</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-6">
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <span class="fa fa-globe text-primary mr-2"></span>语言能力
+            </h3>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">普通话</span>
+                  <span>母语（二乙）</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">英语</span>
+                  <span>CET-4</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div class="bg-primary h-2 rounded-full" style="width: 70%"></div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">粤语</span>
+                  <span>母语</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-6">
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <span class="fa fa-heart text-primary mr-2"></span>兴趣爱好
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-sm flex items-center">
+                <span class="fa fa-table-tennis mr-2"></span>乒乓球
+              </span>
+              <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-sm flex items-center">
+                <span class="fa fa-futbol-o mr-2"></span>羽毛球
+              </span>
+              <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-sm flex items-center">
+                <span class="fa fa-basketball-ball mr-2"></span>篮球
+              </span>
+              <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-sm flex items-center">
+                <span class="fa fa-robot mr-2"></span>人工智能
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目实习经历 -->
+    <section id="projects" class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center">
+        <span class="fa fa-briefcase text-primary mr-3 text-4xl"></span>项目实习经历
+      </h2>
+      
+      <div class="space-y-6">
+        <!-- 智能视觉交互AR红外热传感工业设备故障检测系统 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold">智能视觉交互AR红外热传感工业设备故障检测系统</h3>
+              <p class="text-gray-600">互联网+项目组长</p>
+            </div>
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">2023/01-2024/11</span>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="font-semibold text-lg mb-2">项目描述</h4>
+            <p class="text-gray-700">
+              主导开发"智能视觉交互AR红外热传感工业设备故障检测系统"，该系统结合AR技术与红外热成像技术，能够实时检测工业设备的运行状态，提前预警潜在故障，使故障检测效率提升50%、准确率提高30%。
+            </p>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="font-semibold text-lg mb-2">技术实现</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>运用AI编辑代码技术，设计并集成轻巧的头戴式AR设备以改善用户体验</li>
+              <li>开发红外图像处理算法，识别设备异常热点</li>
+              <li>构建故障诊断模型，基于历史数据预测潜在故障</li>
+              <li>设计AR交互界面，实现设备信息的直观展示与操作</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="font-semibold text-lg mb-2">项目成果</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>系统在实际应用中显著提升了工业设备故障检测的效率和准确性</li>
+              <li>获"互联网+"创新创业大赛省级二等奖</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Kume人事办公系统的设计与实现项目 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold">Kume人事办公系统的设计与实现项目</h3>
+              <p class="text-gray-600">项目开发成员</p>
+            </div>
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">2022/09-2023/01</span>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="font-semibold text-lg mb-2">项目描述</h4>
+            <p class="text-gray-700">
+              参与开发Kume人事办公系统，该系统实现了员工信息管理、考勤管理、薪资计算、招聘流程等功能，提高了企业人事管理的效率。
+            </p>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="font-semibold text-lg mb-2">技术实现</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>负责员工信息管理模块的设计与开发</li>
+              <li>实现了数据导入导出功能，支持Excel格式</li>
+              <li>设计并优化了数据库结构，提高系统性能</li>
+              <li>参与系统界面设计，提升用户体验</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="font-semibold text-lg mb-2">项目成果</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>系统成功上线并投入使用，提高了企业人事管理效率</li>
+              <li>获学校软件设计大赛一等奖</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 远程数据存储系统的设计与实现项目 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold">远程数据存储系统的设计与实现项目</h3>
+              <p class="text-gray-600">项目负责人</p>
+            </div>
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">2022/03-2022/06</span>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="font-semibold text-lg mb-2">项目描述</h4>
+            <p class="text-gray-700">
+              设计并实现远程数据存储系统，支持多用户、多设备的数据同步与备份，提供安全可靠的数据存储服务。
+            </p>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="font-semibold text-lg mb-2">技术实现</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>设计分布式存储架构，确保数据可靠性</li>
+              <li>实现用户认证与权限管理系统</li>
+              <li>开发数据同步算法，支持多设备间数据实时同步</li>
+              <li>设计并实现数据加密方案，保障数据安全</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="font-semibold text-lg mb-2">项目成果</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>完成系统开发并通过测试，实现预期功能</li>
+              <li>获学校计算机应用大赛一等奖</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 毕业论文管理系统的设计与实现项目 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold">毕业论文管理系统的设计与实现项目</h3>
+              <p class="text-gray-600">项目开发成员</p>
+            </div>
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">2021/09-2022/01</span>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="font-semibold text-lg mb-2">项目描述</h4>
+            <p class="text-gray-700">
+              参与开发毕业论文管理系统，该系统实现了选题管理、论文提交、评审、答辩等功能，提高了学校毕业论文管理的效率。
+            </p>
+          </div>
+          
+          <div class="mb-4">
+            <h4 class="font-semibold text-lg mb-2">技术实现</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>负责论文提交与评审模块的开发</li>
+              <li>实现了文件上传与在线预览功能</li>
+              <li>设计评分与反馈机制，支持多轮评审</li>
+              <li>参与系统测试与优化工作</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="font-semibold text-lg mb-2">项目成果</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>系统在学校范围内投入使用，提高了毕业论文管理效率</li>
+              <li>获学校软件开发项目二等奖</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 社团和组织经历 -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6 flex items-center">
+        <span class="fa fa-users text-primary mr-3 text-4xl"></span>社团和组织经历
+      </h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- 暨南大学智算实验室 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold">暨南大学智算实验室</h3>
+              <p class="text-gray-600">实验室成员</p>
+            </div>
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">2022-2024</span>
+          </div>
+          
+          <div>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>参与多模态数字人直播系统的研发工作</li>
+              <li>负责AI模型的训练与优化</li>
+              <li>参与实验室技术分享与讨论</li>
+              <li>协助团队进行科研项目申报与论文撰写</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 校团委组织部 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold">校团委组织部</h3>
+              <p class="text-gray-600">组长</p>
+            </div>
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">2021-2023</span>
+          </div>
+          
+          <div>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>协调组织学校各部门工作</li>
+              <li>组织策划共青团知识竞赛、松山湖基层调研大赛、校运会等大型学校活动</li>
+              <li>帮忙学校部门整理团员资料、团员档案</li>
+              <li>参与暑期"三下乡"志愿活动，被南方+等相关媒体和学院公众号报道</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 校学生会 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold">校学生会</h3>
+              <p class="text-gray-600">组长</p>
+            </div>
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">2021-2023</span>
+          </div>
+          
+          <div>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>协助组织校园文化活动</li>
+              <li>负责班级公众号运营、学校学生会、校团委官方公众号推文的撰写</li>
+              <li>参与学校各项赛事的组织工作，如蓝桥杯、ACM算法竞赛</li>
+              <li>组织学生交流活动，促进学生间的学习与合作</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 班级宣传委员 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold">班级宣传委员</h3>
+              <p class="text-gray-600">班级职务</p>
+            </div>
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">2021-2025</span>
+          </div>
+          
+          <div>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+              <li>负责班级活动的宣传工作</li>
+              <li>设计制作班级宣传海报与视频</li>
+              <li>帮忙班级整理学籍档案</li>
+              <li>组织班级文化建设活动</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">林锦镗</h3>
+          <p class="text-gray-300 mb-4">
+            专注于人工智能与软件开发领域，具备丰富的项目经验和扎实的技术基础，期待在相关领域寻找发展机会。
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/2803246197" class="text-gray-300 hover:text-white transition-colors">
+              <span class="fa fa-envelope-o text-xl"></span>
+            </a>
+            <a href="https://github.com/2803246197" class="text-gray-300 hover:text-white transition-colors">
+              <span class="fa fa-phone text-xl"></span>
+            </a>
+            <a href="https://github.com/2803246197" class="text-gray-300 hover:text-white transition-colors">
+              <span class="fa fa-github text-xl"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/%E5%AD%90%E6%9D%B0-%E6%9E%97-480183345/" class="text-gray-300 hover:text-white transition-colors">
+              <span class="fa fa-linkedin text-xl"></span>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-4">联系方式</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center">
+              <span class="fa fa-envelope-o w-8"></span>
+              <span>13266271596@163.com</span>
+            </li>
+            <li class="flex items-center">
+              <span class="fa fa-phone w-8"></span>
+              <span>13266271596</span>
+            </li>
+            <li class="flex items-center">
+              <span class="fa fa-map-marker w-8"></span>
+              <span>广东</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-4">快速导航</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#about" class="hover:text-white transition-colors">关于我</a></li>
+            <li><a href="#education" class="hover:text-white transition-colors">教育经历</a></li>
+            <li><a href="#skills" class="hover:text-white transition-colors">技能证书</a></li>
+            <li><a href="#projects" class="hover:text-white transition-colors">项目经历</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 林锦镗. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 导航栏滚动效果
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 10) {
+        header.classList.add('shadow-md');
+        header.classList.remove('shadow-sm');
+      } else {
+        header.classList.remove('shadow-md');
+        header.classList.add('shadow-sm');
+      }
+    });
+
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // 卡片动画
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.card-hover');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-4');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+      
+      cards.forEach(card => {
+        card.classList.add('opacity-0', 'translate-y-4', 'transition-all', 'duration-500');
+        observer.observe(card);
+      });
+    });
+    /*
+    // 下载按钮点击事件
+      document.getElementById('downloadResumeBtn').addEventListener('click', function() {
+      // 方式一：直接下载
+      window.location.href = 'https://github.com/2803246197/JinTangLin/blob/main/AI%E5%B7%A5%E7%A8%8B%E5%B8%88.pdf';
+    });
+
+     */
+  </script>
+</body>
+</html>
+    
